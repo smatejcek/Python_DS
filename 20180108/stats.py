@@ -30,11 +30,10 @@ def mode(nums):
 
     argument: list of number_list
     return: the mode
-    >>> mode([1, 2, 3, 4, 4, 5, 5, 5, 6, 7, 8])
-    5
+    Doctest:
+        >>> mode
     """
     counter = {i:0 for i in nums}
-    max = 0
     for i in range(len(nums)):
         counter[nums[i]] += 1
     return sorted(counter, key = lambda key: counter[key])[-1]
