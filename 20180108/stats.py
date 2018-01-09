@@ -1,3 +1,8 @@
+"""
+  Run:
+    python -m doctest -v stats.py
+"""
+
 def add(numbers):
     return sum(*numbers)
 
